@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick King - Resume</title>
+    <style>
+       * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #6930C3;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  /*height: 300px;  only for demonstration, should be removed */
+  background: #FFFFFF;
+ padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #5390D9;
+  /* height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #5E60CE;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <h1>Patrick King</h1>
+        <p>Web Developer</p>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>Email: youremail@example.com</p>
+            <p>Phone: 661-9546</p>
+          
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p> I'm Patrick King, a committed University of Belize student with a consistent record of academic success.
+	      I have actively participated in software development I'm passionate about embracing new coding challenges, adapting to changing environments, 
+	     and excelling in the ever-evolving tech landscape.A highly motivated and detail-oriented web developer with a passion for creating 
+		 responsive and user-friendly websites. Experienced in HTML, CSS, JavaScript, and various web development frameworks.</p>
+        </div>
+
+        <div class="section animated-section">
+            <h2>Experience</h2>
+            <p><strong>Web Developer</strong></p>
+            <p>Designed and developed responsive websites for my FOC class using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Web Development Frameworks</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
